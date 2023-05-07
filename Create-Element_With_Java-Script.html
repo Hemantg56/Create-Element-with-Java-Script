@@ -13,9 +13,54 @@
     <div class="x">
         <p id="para">Para 1</p>
         <p>Para 2</p>
-        <h1>Hello</h1>
+        <!-- <h1>Hello</h1> -->
     </div>
 
+    <!-- script ma div ke koi pan tag create karavnu hoy to thay -->
+
+    <!-- Syntex  -->
+
+    <!-- varname = document.createElement('je tag levu hoy enu name') -->
+
+    <!-- pachi aane call karavu pade -->
+
+    <!-- jena uder rakvanu hoy ena var ma get karyi ne  -->
+
+    <!-- varname.append(varname); -->
+
+    <!-- child create kaevu hoy to -->
+    <!-- varname.appendChild(varname) -->
+
+    <!-- Text ne pan create kari skay -->
+
+    <!-- Syntex :- -->
+
+    <!-- varnaame = document.createTextNode('je pan text lakhvu hoy akhi skay') -->
+
+    <!-- pachi aane call karavu pade -->
+
+    <!-- jena uder rakvanu hoy ena var ma get karyi ne  -->
+
+    <!-- tagnuvarname.append(je text lakahvanu hoy enu varname) -->
+    <!-- varname.append(varname) -->
+
+    <!-- to aama text madi jaay -->
+    <script>
+        div = document.querySelector('.x')
+
+        p_tag = document.getElementById('para')
+        h1 = document.createElement('h1') // <h1></h1?
+        h1_tex = document.createTextNode('Hi Hemant')
+
+        h1.append(h1_tex)
+            // div.append(h1)
+
+        // div.appendChild(h1)
+
+        // tag ne uper kaevu hoy aa syntax nu use thay
+
+        div.insertBefore(h1, p_tag)
+    </script>
 </body>
 
 </html>
